@@ -1,0 +1,6 @@
+# 可选的本地交互设置；在受信任仓库逐项合并后，用当前客户端核对有效设置。
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[sandbox_workspace_write]
+network_access = false
