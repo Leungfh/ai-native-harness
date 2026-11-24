@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "setup": [],
+  "lint": {
+    "skip_reason": "此标准库教学样例没有独立风格检查器。业务仓库应接回已有 lint 命令。"
+  },
+  "test": [
+    ["@python", "-m", "unittest", "-v", "test_release_note"]
+  ],
+  "build": [
+    ["@python", "release_note.py", "v0.2.0", "新增导出", "修正标题", "--output", "RELEASE-NOTE.example.md"]
+  ]
+}

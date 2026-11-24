@@ -1,0 +1,7 @@
+﻿{
+  "schema_version": 1,
+  "setup": [],
+  "lint": {"skip_reason": "项目目前没有独立的格式或静态检查工具；行为测试在 test 阶段运行。"},
+  "test": [["@python", "-m", "unittest", "discover", "-s", "tests", "-v"], ["@python", "tools/kit.py", "verify"]],
+  "build": [["@python", "tools/kit.py", "build", "--out", "build/dist"]]
+}
